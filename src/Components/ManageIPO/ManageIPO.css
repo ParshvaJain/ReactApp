@@ -1,0 +1,36 @@
+#main-card-ipo {
+  width: 900px;
+}
+#each-card-ipo {
+  width: 275px;
+  height: 220px;
+  margin-bottom: 25px;
+}
+
+#add-new-ipo {
+  margin-left: 38px;
+}
+
+#edit-details {
+  margin-left: 10px;
+}
+#card-body-ipo {
+  width: 850px;
+  padding-left: 40px;
+  padding-right: 5px;
+}
+#form-body {
+  width: 500px;
+}
+#form-card {
+  width: 580px;
+}
+
+#ipo-c {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+#form-c {
+  width: 250px;
+  padding-left: 150px;
+}

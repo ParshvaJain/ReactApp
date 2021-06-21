@@ -1,0 +1,67 @@
+#compare-main-div-sector {
+  display: flex;
+  justify-content: left;
+  padding-left: 50px;
+  width: 600px;
+  height: 500px;
+}
+
+#select-form-cc-sector {
+  height: 450px;
+  width: 600px;
+}
+
+#header-cc-sector {
+  text-align: center;
+  font-size: large;
+  font-weight: 500;
+}
+
+#select-c-sector {
+  padding-right: 15px;
+}
+#from-period-sector {
+  padding-left: 15px;
+}
+
+#select-d-sector {
+  margin-left: 10px;
+}
+
+#select-p-sector {
+  padding-right: 10px;
+}
+
+#add-button-sector {
+  margin-top: 5px;
+  margin-left: 60px;
+}
+
+#generate-sector {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-left: 150px;
+  padding-top: 10px;
+  width: 150px;
+  height: 50px;
+  border-radius: 15px;
+}
+
+#chart-sector {
+  padding-left: 50px;
+  width: 925px;
+  height: 1500px;
+}
+
+#chart-header-sector {
+  text-align: center;
+  font-size: large;
+  font-weight: 500;
+}
+
+#chart-body-sector {
+  width: 850px;
+  height: 420px;
+  margin-bottom: 100px;
+}

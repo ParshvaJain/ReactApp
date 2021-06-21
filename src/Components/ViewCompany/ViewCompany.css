@@ -1,0 +1,22 @@
+#main-card-c-name {
+  width: 100%;
+}
+
+#card-header-c-name {
+  justify-content: center;
+  text-align: center;
+}
+
+#chart {
+  width: 400px;
+  height: 500px;
+}
+
+#data {
+  justify-content: center;
+  padding-left: 55px;
+}
+
+#about {
+  padding-left: 70px;
+}

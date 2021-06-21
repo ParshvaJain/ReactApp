@@ -1,0 +1,57 @@
+#root {
+  background-color: grey;
+  background-blend-mode: lighten;
+  background-repeat: repeat, repeat;
+  background-position: center center;
+  overflow: auto;
+  height: 100%;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+#search-box-full {
+  padding-right: 25px;
+}
+#search-box {
+  padding-right: 100px;
+}
+
+#nav-dropdown {
+  padding-right: 40px;
+}
+
+.dropdown-menu {
+  right: 0;
+  left: auto;
+}
+
+#card-header {
+  background-color: white;
+  justify-content: center;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#each-card {
+  height: 270px;
+  width: 150px;
+  padding-left: 5px;
+  margin-right: 45px;
+  margin-left: 60px;
+  margin-top: 25px;
+  box-shadow: 10px 10px grey;
+}
+
+#a {
+  font-weight: 200;
+  color: red;
+}
+
+#card-div {
+  padding-left: 30px;
+}

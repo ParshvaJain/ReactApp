@@ -1,0 +1,42 @@
+#each-card-company {
+  width: 275px;
+  height: 220px;
+  margin-bottom: 25px;
+}
+
+#edit-details-company {
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+#ipo-company {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+#main-card-company {
+  width: 900px;
+}
+
+#card-body-company {
+  width: 850px;
+  padding-left: 40px;
+  padding-right: 5px;
+}
+
+#form-company {
+  width: 250px;
+  padding-left: 150px;
+}
+
+#form-card-company {
+  width: 580px;
+}
+
+#form-body-company {
+  width: 500px;
+}
+
+#add-new-company {
+  margin-left: 38px;
+}

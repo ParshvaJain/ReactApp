@@ -1,0 +1,35 @@
+#main-card-upipo {
+  width: 900px;
+}
+
+#card-body-ipo-up {
+  width: 850px;
+  padding-left: 40px;
+  padding-right: 5px;
+}
+
+#upcoming-card-header {
+  text-align: center;
+}
+
+#container-head-upcoming {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#each-card-ipo-up {
+  width: 275px;
+  height: 180px;
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+
+#up-container {
+  margin-top: 10px;
+}
+
+#main-upcoming-ipo {
+  display: flex;
+  justify-content: center;
+}

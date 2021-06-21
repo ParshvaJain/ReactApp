@@ -1,0 +1,38 @@
+#ipo-exchange {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+#main-card-exchange {
+  width: 900px;
+}
+
+#card-body-exchange {
+  width: 850px;
+  padding-left: 40px;
+  padding-right: 5px;
+}
+
+#form-exchange {
+  width: 250px;
+  padding-left: 150px;
+}
+
+#form-card-exchange {
+  width: 580px;
+}
+
+#add-new-exchange {
+  margin-left: 0px;
+  width: 100px;
+}
+
+#each-card-exchange {
+  width: 275px;
+  height: 220px;
+  margin-bottom: 25px;
+}
+#edit-details-exchange {
+  margin-left: 10px;
+  margin-top: 5px;
+}
