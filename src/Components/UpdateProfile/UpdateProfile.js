@@ -28,7 +28,7 @@ class UpdationForm extends Component {
         }
         
         
-        fetch("http://localhost:8081/authentication/update/getDetails/"+this.props.getUserId(),requestOptions)
+        fetch("https://authentication--service.herokuapp.com/authentication/update/getDetails/"+this.props.getUserId(),requestOptions)
         .then(response =>  response.json())
         .then(data => {
             this.setState({
@@ -69,7 +69,7 @@ class UpdationForm extends Component {
         }
 
         this.setState(() => {
-            fetch('http://localhost:8081/authentication/update/'+this.props.getUserId(),requestOptions)
+            fetch('https://authentication--service.herokuapp.com/authentication/update/'+this.props.getUserId(),requestOptions)
             .then(response => {
                 if(response.status  === 200) {
                     this.setState({

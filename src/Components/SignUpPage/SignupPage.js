@@ -73,7 +73,7 @@ class CardTemplate extends Component {
             referrerPolicy:"no-referrer",
         }
         this.setState({isLoading : true} , () => {
-            fetch('http://localhost:8081/authentication/signup',requestOptions)
+            fetch('https://authentication--service.herokuapp.com/authentication/signup',requestOptions)
             .then(response => {
                 if(response.status  === 200) {
                     this.setState({

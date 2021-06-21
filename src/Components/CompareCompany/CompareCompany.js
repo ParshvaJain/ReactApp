@@ -51,8 +51,8 @@ class CompareCompany extends Component{
         }
 
         Promise.all([
-            fetch("http://localhost:8082/company/getCompanies",requestOptions),
-            fetch("http://localhost:8084/stockexchange/getNames",requestOptions)
+            fetch("https://company--service.herokuapp.com/company/getCompanies",requestOptions),
+            fetch("https://stockexchange--service.herokuapp.com/stockexchange/getNames",requestOptions)
         ])
         .then(([res1,res2]) => {
             return Promise.all([res1.json(),res2.json()])
@@ -82,7 +82,7 @@ class CompareCompany extends Component{
             body : JSON.stringify(jsonBody)            
         }
 
-        fetch('http://localhost:8085/excel/getCompaniesByDate',requestOptions)
+        fetch('https://stockprice--service.herokuapp.com/excel/getCompaniesByDate',requestOptions)
         .then(res => {
             if(res.status === 200){
                 return res.json();
@@ -146,8 +146,8 @@ class CompareCompany extends Component{
         }
 
         Promise.all([
-            fetch("http://localhost:8085/excel/getCompaniesByDate",requestOptions1),
-            fetch("http://localhost:8085/excel/getCompaniesByDate",requestOptions2)
+            fetch("https://stockprice--service.herokuapp.com/excel/getCompaniesByDate",requestOptions1),
+            fetch("https://stockprice--service.herokuapp.com/excel/getCompaniesByDate",requestOptions2)
         ])
         .then(([res1,res2]) => {
             return Promise.all([res1.json(),res2.json()])

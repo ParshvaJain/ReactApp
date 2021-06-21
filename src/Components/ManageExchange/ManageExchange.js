@@ -50,7 +50,7 @@ class CreateExchangeForm extends Component {
         }
 
         this.setState(() => {
-            fetch('http://localhost:8084/stockexchange/createExchange',requestOptions)
+            fetch('https://stockexchange--service.herokuapp.com/stockexchange/createExchange',requestOptions)
             .then(response => {
                 if(response.status  === 200) {
                     this.setState({
@@ -199,7 +199,7 @@ class ManageExchange extends Component{
             method : 'GET',
             headers : {"Authorization" : "Bearer " + this.props.getAuthToken() }
         }
-        fetch("http://localhost:8084/stockexchange/",requestOptions)
+        fetch("https://stockexchange--service.herokuapp.com/stockexchange/",requestOptions)
         .then(response =>  response.json())
         .then(data => {
             this.setState({data : data});

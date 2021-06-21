@@ -116,7 +116,7 @@ class UserHome extends Component {
             method : 'GET',
             headers : {"Authorization" : "Bearer " + this.props.getAuthToken() }
         }
-        fetch("http://localhost:8082/company/",requestOptions)
+        fetch("https://company--service.herokuapp.com/company/",requestOptions)
         .then(response =>  response.json())
         .then(data => {
             this.setState({data : data,originalData : data});

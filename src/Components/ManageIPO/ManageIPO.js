@@ -51,7 +51,7 @@ class CreateIPOForm extends Component {
             referrerPolicy:"no-referrer",
         }
         this.setState(() => {
-            fetch('http://localhost:8082/company/ipo/createIPO',requestOptions)
+            fetch('https://company--service.herokuapp.com/company/ipo/createIPO',requestOptions)
             .then(response => {
                 if(response.status  === 200) {
                     this.setState({
@@ -164,7 +164,7 @@ class EditIPOForm extends Component {
             referrerPolicy:"no-referrer",
         }
 
-        fetch(`http://localhost:8082/company/ipo/updateIPO/${this.props.ipoId}`,requestOptions)
+        fetch(`https://company--service.herokuapp.com/company/ipo/updateIPO/${this.props.ipoId}`,requestOptions)
             .then(response => {
                 if(response.status  === 200) {
                     console.log("in 200");
@@ -189,7 +189,7 @@ class EditIPOForm extends Component {
             headers : {"Authorization" : "Bearer " + this.props.getAuthToken() }
         }
         console.log(this.props.ipoId);
-        fetch(`http://localhost:8082/company/ipo/getIPOById/${this.props.ipoId}`,requestOptions)
+        fetch(`https://company--service.herokuapp.com/company/ipo/getIPOById/${this.props.ipoId}`,requestOptions)
             .then(response => {
                 if(response.status  === 200) {
                     return response.json();
@@ -359,7 +359,7 @@ class ManageIPO extends Component{
             method : 'GET',
             headers : {"Authorization" : "Bearer " + this.props.getAuthToken() }
         }
-        fetch("http://localhost:8082/company/ipo/getIPO",requestOptions)
+        fetch("https://company--service.herokuapp.com/company/ipo/getIPO",requestOptions)
         .then(response =>  response.json())
         .then(data => {
             this.setState({data : data});

@@ -74,7 +74,7 @@ class CreateCompanyForm extends Component {
             referrerPolicy:"no-referrer",
         }
         this.setState(() => {
-            fetch('http://localhost:8082/company/create',requestOptions)
+            fetch('https://company--service.herokuapp.com/company/create',requestOptions)
             .then(response => {
                 if(response.status  === 200) {
                     this.setState({
@@ -202,7 +202,7 @@ class EditCompanyForm extends Component {
             referrerPolicy:"no-referrer",
         }
 
-        fetch(`http://localhost:8082/company/update/${this.props.companyId}`,requestOptions)
+        fetch(`https://company--service.herokuapp.com/company/update/${this.props.companyId}`,requestOptions)
             .then(response => {
                 if(response.status  === 200) {
                     console.log("in 200");
@@ -227,7 +227,7 @@ class EditCompanyForm extends Component {
             headers : {"Authorization" : "Bearer " + this.props.getAuthToken() }
         }
         console.log(this.props.ipoId);
-        fetch(`http://localhost:8082/company/${this.props.companyId}`,requestOptions)
+        fetch(`https://company--service.herokuapp.com/company/${this.props.companyId}`,requestOptions)
             .then(response => {
                 if(response.status  === 200) {
                     return response.json();
@@ -409,7 +409,7 @@ class ManageCompany extends Component{
             method : 'GET',
             headers : {"Authorization" : "Bearer " + this.props.getAuthToken() }
         }
-        fetch("http://localhost:8082/company/",requestOptions)
+        fetch("https://company--service.herokuapp.com/company/",requestOptions)
         .then(response =>  response.json())
         .then(data => {
             this.setState({data : data});

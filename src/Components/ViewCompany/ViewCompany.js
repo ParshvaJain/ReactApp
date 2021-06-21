@@ -37,7 +37,7 @@ class ViewCompany extends Component{
             headers: { "Authorization":"Bearer " + this.props.getAuthToken() }
         }
         
-        fetch("http://localhost:8082/company/getCompanyByName/"+this.state.name,requestOptions)
+        fetch("https://company--service.herokuapp.com/company/getCompanyByName/"+this.state.name,requestOptions)
             .then(response=> response.json())
             .then(data =>{
                 this.setState({

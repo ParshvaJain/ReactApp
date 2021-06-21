@@ -37,7 +37,7 @@ class ImportData extends Component{
             body : JSON.stringify(data)
         }
           
-          fetch('http://localhost:8085/excel/upload',requestOptions)
+          fetch('https://stockprice--service.herokuapp.com/excel/upload',requestOptions)
           .then(response => {
             response.json();
           })

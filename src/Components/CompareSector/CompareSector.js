@@ -37,7 +37,7 @@ class CompareSector extends Component {
             method : 'GET',
             headers : {"Authorization" : "Bearer " + this.props.getAuthToken() }
         }
-        fetch('http://localhost:8083/sector/getAllSectors',requestOptions)
+        fetch('https://sector--service.herokuapp.com/sector/getAllSectors',requestOptions)
         .then(response => {
             if(response.status === 200){
                 return response.json();
@@ -69,7 +69,7 @@ class CompareSector extends Component {
                 body : JSON.stringify(jsonBody)            
             }
     
-            fetch('http://localhost:8085/excel/getSectorByDate',requestOptions)
+            fetch('https://stockprice--service.herokuapp.com/excel/getSectorByDate',requestOptions)
             .then(response => {
                 if(response.status === 200){
                     return response.json();
@@ -131,8 +131,8 @@ class CompareSector extends Component {
             }
     
             Promise.all([
-                fetch("http://localhost:8085/excel/getSectorByDate",requestOptions1),
-                fetch("http://localhost:8085/excel/getSectorByDate",requestOptions2)
+                fetch("https://stockprice--service.herokuapp.com/excel/getSectorByDate",requestOptions1),
+                fetch("https://stockprice--service.herokuapp.com/excel/getSectorByDate",requestOptions2)
             ])
             .then(([res1,res2]) => {
                 return Promise.all([res1.json(),res2.json()])
