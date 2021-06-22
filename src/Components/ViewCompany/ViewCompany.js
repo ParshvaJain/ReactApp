@@ -68,10 +68,7 @@ class ViewCompany extends Component{
                 <Card id="main-card-c-name">
                         <Card.Header id="card-header-c-name">{this.state.name}</Card.Header>
                         <Card.Body>
-                            <Row>
-                                <Container id="chart">
-                                </Container>  
-                            </Row>
+                            
                             <Container id="data">
                             <Row md = "4">
                                 <Col>
@@ -104,18 +101,23 @@ class ViewCompany extends Component{
                             </Row>
                             <br></br>
                             <br></br>
-                            <Row md = "4">
+                            <Row md = "2">
                                 <Col>
                                 Board Of Directors
+                                </Col>
+                                <Col>
+                                Company Code in each Exchange
                                 </Col>
                                 
                             </Row>
 
-                            <Row md = "4">
+                            <Row md = "2">
                                 <Col>
                                 {this.state.BOD}
                                 </Col>
-                              
+                                <Col>
+                                {this.state.ETC}
+                                </Col>
                                 
                             </Row>
                             </Container>
