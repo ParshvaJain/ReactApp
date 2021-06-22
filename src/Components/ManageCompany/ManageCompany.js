@@ -217,7 +217,7 @@ class EditCompanyForm extends Component {
                 console.log(data);
                 setTimeout(() => {
                     this.props.history.push("/adminHome");
-                },14000);
+                },3000);
             })
     }
 

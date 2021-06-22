@@ -10,7 +10,7 @@ class NavWithDropDown extends Component {
         return(
             <Container>
                 <Navbar fixed="top" id="top-navbar" bg="dark" variant="dark">
-                        <Navbar.Brand href="/adminHome">StockChart</Navbar.Brand>
+                        <Navbar.Brand><Link to="/adminHome">StockChart</Link></Navbar.Brand>
                         <Nav className="mr-auto">
                         <Nav.Link><Link to="/importData">Import Data</Link></Nav.Link>
                         <Nav.Link><Link to="/manageCompany">Manage Company</Link></Nav.Link>
@@ -19,7 +19,7 @@ class NavWithDropDown extends Component {
                         </Nav>
 
                         <DropdownButton menuAlign="right" title="Admin" id="dropdown-menu-align-right">
-                            <Dropdown.Item eventKey="1" href="/updateProfile/admin">Update Profile</Dropdown.Item>
+                            <Dropdown.Item eventKey="1"><Link to="/updateProfile/admin">Update Profile</Link></Dropdown.Item>
                             <Dropdown.Divider />
                             <Dropdown.Item eventKey="4" href="/">Logout</Dropdown.Item>
                         </DropdownButton>
