@@ -148,7 +148,8 @@ class EditIPOForm extends Component {
         this.updateForm = this.updateForm.bind(this);
     }
 
-    updateForm(){
+    updateForm(e){
+        e.preventDefault();
         var jsonBody = {
             "companyName" : this.state.name,
             "pricePershare": this.state.pps,

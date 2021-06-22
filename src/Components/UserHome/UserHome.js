@@ -33,7 +33,7 @@ class NavWithDropDownUser extends Component {
         return(
             <Container>
                 <Navbar fixed="top" id="top-navbar" bg="dark" variant="dark">
-                        <Navbar.Brand href="/adminHome">StockChart</Navbar.Brand>
+                        <Navbar.Brand href="/userHome">StockChart</Navbar.Brand>
                         <Nav className="mr-auto">
                         <Nav.Link href="/upcomingIPO">Upcoming IPOs</Nav.Link>
                         <Nav.Link href="/compareCompany">Compare Company</Nav.Link>

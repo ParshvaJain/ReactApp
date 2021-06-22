@@ -19,7 +19,7 @@ class NavWithDropDown extends Component {
                         </Nav>
 
                         <DropdownButton menuAlign="right" title="Admin" id="dropdown-menu-align-right">
-                            <Dropdown.Item eventKey="1" href="/updateProfile">Update Profile</Dropdown.Item>
+                            <Dropdown.Item eventKey="1" href="/updateProfile/admin">Update Profile</Dropdown.Item>
                             <Dropdown.Divider />
                             <Dropdown.Item eventKey="4" href="/">Logout</Dropdown.Item>
                         </DropdownButton>

@@ -183,8 +183,9 @@ class EditCompanyForm extends Component {
         this.updateForm = this.updateForm.bind(this);
     }
 
-    updateForm(){
-
+    updateForm(e){
+        e.preventDefault();
+        
         var jsonBody = {
             "companyName" : this.state.name,
             "turnover" : this.state.turnover,
