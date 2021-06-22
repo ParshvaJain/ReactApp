@@ -37,7 +37,7 @@ class CardTemplate extends Component {
         };
         
         this.setState({
-            isAdmin : name.includes("admin") === true ? true : false 
+            isAdmin : name.includes("admin")  ? true : false 
         });
     
         var requestOptions = {

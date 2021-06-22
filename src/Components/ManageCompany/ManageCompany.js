@@ -198,7 +198,7 @@ class EditCompanyForm extends Component {
         }
         var requestOptions = {
             method : 'POST',
-            headers: {'Content-Type':'application/json', 'mode' : 'no-cors'},
+            headers: {'Content-Type':'application/json'},
             body : JSON.stringify(jsonBody),
             referrerPolicy:"no-referrer",
         }
