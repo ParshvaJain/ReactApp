@@ -110,9 +110,9 @@ class CardTemplate extends Component {
             color : this.state.color
         }
         return(
-            <Container id="card" md="auto">
+            <Container id="card-signup" md="auto">
             <Card className="text-center" id="text-header">
-                <Card.Header>{this.props.type}</Card.Header>
+                <Card.Header>{this.props.type.toUpperCase()}</Card.Header>
                 <Card.Body>
                     
                     <Form className="justify-content-center" onSubmit={this.getData}>

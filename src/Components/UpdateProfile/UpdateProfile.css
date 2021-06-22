@@ -1,9 +1,26 @@
 #main-box {
-  border-style: solid;
-  width: 700px;
-  height: 500px;
+  width: 800px;
+  height: 800px;
 }
 
 #form-update {
   padding-top: 22px;
+  width: 700px;
+  font-size: 21px;
+  height: 400px;
+}
+
+#update-profile-header {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#form-update {
+  padding-left: 20px;
+}
+
+#simple {
+  margin-left: 15px;
+  margin-top: -50px;
 }

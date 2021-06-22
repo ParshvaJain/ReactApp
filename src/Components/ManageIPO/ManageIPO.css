@@ -34,3 +34,25 @@
   width: 250px;
   padding-left: 150px;
 }
+
+#card-header-ipo {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+#ipo-new-form {
+  padding-left: 13px;
+  font-size: 19px;
+}
+
+#create-ipo-button {
+  margin-top: -75px;
+  margin-left: 5px;
+}
+
+#create-ipo-header {
+  font-size: 19px;
+  text-transform: uppercase;
+  margin-left: 190px;
+}

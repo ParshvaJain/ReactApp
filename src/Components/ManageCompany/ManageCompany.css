@@ -40,3 +40,23 @@
 #add-new-company {
   margin-left: 38px;
 }
+
+#card-header-company {
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+#company-new-header {
+  text-transform: uppercase;
+  padding-left: 185px;
+  font-size: 18px;
+}
+
+#create-company-form {
+  padding-left: 20px;
+}
+
+#create-company-button {
+  margin-top: -45px;
+}

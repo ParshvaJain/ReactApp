@@ -46,7 +46,7 @@ class CreateIPOForm extends Component {
         var requestOptions = {
             method : 'POST',
             mode : 'cors',
-            headers: {'Content-Type':'application/json'},
+            headers: {'Content-Type':'application/json',"Authorization" : "Bearer " + this.props.getAuthToken()},
             body : JSON.stringify(jsonBody),
             referrerPolicy:"no-referrer",
         }
@@ -86,7 +86,7 @@ class CreateIPOForm extends Component {
         }
 
         return(
-            <Form className="justify-content-center" onSubmit={this.createIPO}>
+            <Form id="ipo-new-form"onSubmit={this.createIPO}>
                         <Form.Group controlId="formCompanyName">
                         <Form.Label>Company Name</Form.Label>
                             <Form.Control placeholder="Company name"  required/>
@@ -120,7 +120,7 @@ class CreateIPOForm extends Component {
                         <br></br>
                         <Row>
                             <Col>
-                                <Button variant="primary" type="submit">
+                                <Button id="create-ipo-button" variant="primary" type="submit">
                                 Create
                                 </Button>
                             </Col>
@@ -160,7 +160,7 @@ class EditIPOForm extends Component {
         }
         var requestOptions = {
             method : 'POST',
-            headers: {'Content-Type':'application/json'},
+            headers: {'Content-Type':'application/json',"Authorization" : "Bearer " + this.props.getAuthToken()},
             body : JSON.stringify(jsonBody),
             referrerPolicy:"no-referrer",
         }
@@ -390,7 +390,7 @@ class ManageIPO extends Component{
                 <Col>
                 <div id="ipo-c">
                     <Card id="main-card-ipo">
-                        <Card.Header id="card-header">Upcoming IPO</Card.Header>
+                        <Card.Header id="card-header-ipo">Upcoming IPO</Card.Header>
                         <Card.Body id="card-body-ipo">
                             <Col>
                             <Row md="1">
@@ -405,7 +405,7 @@ class ManageIPO extends Component{
                 <Col>
                 <div id="form-c">
                     <Card id="form-card">
-                    <Card.Header id="form-header">{this.state.createForm === true ? 'Create New IPO' : ''}</Card.Header>
+                    <Card.Header id="form-header">{this.state.createForm === true ? <span id="create-ipo-header">Create New IPO</span>: ''}</Card.Header>
                         <Card.Body id="form-body">
                             <Row md="1">   
                             {form}

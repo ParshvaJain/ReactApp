@@ -60,7 +60,7 @@ class NavWithDropDown extends Component {
         return(
             <Container>
                 <Navbar fixed="top" id="top-navbar" bg="dark" variant="dark">
-                        <Navbar.Brand href="/adminHome">StockChart</Navbar.Brand>
+                        <Navbar.Brand href="/adminHome">Chart Market</Navbar.Brand>
                         <Nav className="mr-auto">
                         <Nav.Link><Link to="/importData">Import Data</Link></Nav.Link>
                         <Nav.Link><Link to="/manageCompany">Manage Company</Link></Nav.Link>
@@ -153,7 +153,7 @@ class AdminHome extends Component {
                 <br></br>
                 <Container fluid>
                     <Card id="main-card">
-                        <Card.Header id="card-header">Check out the companies</Card.Header>
+                        <Card.Header id="card-header">Check out the Companies</Card.Header>
                         <Card.Body>
                             <Row md="4">
                                 

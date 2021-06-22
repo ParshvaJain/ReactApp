@@ -7,6 +7,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
+import Card from 'react-bootstrap/Card';
 
 class UpdationForm extends Component {
     constructor(props){
@@ -63,7 +64,7 @@ class UpdationForm extends Component {
         var requestOptions = {
             method : 'POST',
             mode : 'cors',
-            headers: {'Content-Type':'application/json'},
+            headers: {'Content-Type':'application/json',"Authorization" : "Bearer " + this.props.getAuthToken()},
             body : JSON.stringify(jsonBody),
             referrerPolicy:"no-referrer",
         }
@@ -104,7 +105,10 @@ class UpdationForm extends Component {
 
         return(
             <Container id="main-box">
-            <Form className="justify-content-center" id="form-update"onSubmit={this.updateProfile}>
+            <Card>
+                <Card.Header id="update-profile-header">Update Profile</Card.Header>
+            
+            <Form id="form-update"onSubmit={this.updateProfile}>
                         <Form.Group controlId="formName">
                         <Form.Label>User Name</Form.Label>
                             <Form.Control type="text"  onChange={e => this.setState({name : e.target.value})} value={this.state.name}placeholder="Enter User name"  required/>
@@ -125,11 +129,9 @@ class UpdationForm extends Component {
                         <br></br>
 
                         <Row>
-                            <Col>
-                                <Button variant="primary" type="submit">
+                                <Button id="simple" variant="primary" type="submit">
                                     Update Profile
                                 </Button>
-                            </Col>
                             
                             <Col>
                                 <span style={messagestyle}>{this.state.message}</span>
@@ -137,6 +139,7 @@ class UpdationForm extends Component {
                         </Row>
                      
                     </Form>
+                    </Card>
                     </Container>
         );
     }

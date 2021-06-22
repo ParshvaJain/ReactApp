@@ -69,7 +69,7 @@ class CreateCompanyForm extends Component {
         var requestOptions = {
             method : 'POST',
             mode : 'cors',
-            headers: {'Content-Type':'application/json'},
+            headers: {'Content-Type':'application/json',"Authorization" : "Bearer " + this.props.getAuthToken()},
             body : JSON.stringify(jsonBody),
             referrerPolicy:"no-referrer",
         }
@@ -108,7 +108,7 @@ class CreateCompanyForm extends Component {
         }
 
         return(
-            <Form className="justify-content-center" onSubmit={this.createCompany}>
+            <Form id="create-company-form" onSubmit={this.createCompany}>
                         <Form.Group controlId="formCompanyName">
                         <Form.Label>Company Name</Form.Label>
                             <Form.Control type="text" placeholder="Company name"  required/>
@@ -152,7 +152,7 @@ class CreateCompanyForm extends Component {
                         <br></br>
                         <Row>
                             <Col>
-                                <Button variant="primary" type="submit">
+                                <Button id="create-company-button" variant="primary" type="submit">
                                 Create Company
                                 </Button>
                             </Col>
@@ -198,7 +198,7 @@ class EditCompanyForm extends Component {
         }
         var requestOptions = {
             method : 'POST',
-            headers: {'Content-Type':'application/json'},
+            headers: {'Content-Type':'application/json',"Authorization" : "Bearer " + this.props.getAuthToken()},
             body : JSON.stringify(jsonBody),
             referrerPolicy:"no-referrer",
         }
@@ -458,7 +458,7 @@ class ManageCompany extends Component{
                 <Col>
                 <div id="form-company">
                     <Card id="form-card-company">
-                    <Card.Header>{this.state.createForm === true ? 'Create New Company' : ''}</Card.Header>
+                    <Card.Header>{this.state.createForm === true ? <span id="company-new-header">Create New Company </span>: ''}</Card.Header>
                         <Card.Body id="form-body-company">
                             <Row md="1">   
                             {form}

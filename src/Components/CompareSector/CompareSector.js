@@ -65,7 +65,7 @@ class CompareSector extends Component {
     
             var requestOptions = {
                 method : 'POST',
-                headers : {"Content-Type":"application/json" },
+                headers : {"Content-Type":"application/json","Authorization" : "Bearer " + this.props.getAuthToken()},
                 body : JSON.stringify(jsonBody)            
             }
     
@@ -120,13 +120,13 @@ class CompareSector extends Component {
     
             var requestOptions1 = {
                 method : 'POST',
-                headers : {"Content-Type":"application/json" },
+                headers : {"Content-Type":"application/json","Authorization" : "Bearer " + this.props.getAuthToken()},
                 body : JSON.stringify(jsonBody1)            
             }
     
             var requestOptions2 = {
                 method : 'POST',
-                headers : {"Content-Type":"application/json" },
+                headers : {"Content-Type":"application/json","Authorization" : "Bearer " + this.props.getAuthToken()},
                 body : JSON.stringify(jsonBody2)            
             }
     

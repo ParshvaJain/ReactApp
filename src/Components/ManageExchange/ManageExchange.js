@@ -44,7 +44,7 @@ class CreateExchangeForm extends Component {
         var requestOptions = {
             method : 'POST',
             mode : 'cors',
-            headers: {'Content-Type':'application/json'},
+            headers: {'Content-Type':'application/json',"Authorization" : "Bearer " + this.props.getAuthToken()},
             body : JSON.stringify(jsonBody),
             referrerPolicy:"no-referrer",
         }
@@ -84,7 +84,7 @@ class CreateExchangeForm extends Component {
         }
 
         return(
-            <Form className="justify-content-center" onSubmit={this.createExchange}>
+            <Form id="create-exchange-form" onSubmit={this.createExchange}>
                         <Form.Group controlId="formExchangeName">
                         <Form.Label>Exchange Name</Form.Label>
                             <Form.Control type="text" placeholder="Enter Exchange name"  required/>
@@ -110,7 +110,7 @@ class CreateExchangeForm extends Component {
 
                         <Row>
                             <Col>
-                                <Button variant="primary" type="submit">
+                                <Button id="create-exchange-button" variant="primary" type="submit">
                                     Create Exchange
                                 </Button>
                             </Col>
@@ -243,7 +243,7 @@ class ManageExchange extends Component{
                 <Col>
                 <div id="form-exchange">
                     <Card id="form-card-exchange">
-                    <Card.Header>{this.state.createForm === true ? 'Create New Exchange' : ''}</Card.Header>
+                    <Card.Header>{this.state.createForm === true ?<span id="heading-exchange">Create New Exchange </span>: ''}</Card.Header>
                         <Card.Body id="form-body-exchange">
                             <Row md="1">   
                             {form}

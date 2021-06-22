@@ -86,9 +86,9 @@ class CardTemplate extends Component {
         }
 
         return (
-            <Container id="card" md="auto">
-                <Card className="text-center" id="text-header">
-                <Card.Header>{this.props.type}</Card.Header>
+            <Container id="card-login" md="auto">
+                <Card className="text-center" id="text-header-login">
+                <Card.Header>{this.props.type.toUpperCase()}</Card.Header>
                 <Card.Body>
                     
                     <Form className="justify-content-center" onSubmit={this.verifyData}>

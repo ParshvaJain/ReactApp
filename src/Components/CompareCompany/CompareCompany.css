@@ -18,6 +18,7 @@
   text-align: center;
   font-size: large;
   font-weight: 500;
+  text-transform: uppercase;
 }
 
 #from-period {
@@ -54,16 +55,17 @@
   text-align: center;
   font-size: large;
   font-weight: 500;
+  text-transform: uppercase;
 }
 #chart {
-  padding-left: 50px;
+  padding-left: 30px;
   width: 925px;
   height: 1500px;
 }
 
 #chart-body {
   width: 850px;
-  height: 420px;
+  height: 400px;
   margin-bottom: 100px;
 }
 

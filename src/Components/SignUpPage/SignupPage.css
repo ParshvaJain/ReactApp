@@ -17,13 +17,14 @@ body {
   padding-left: 50px;
   padding-right: 50px;
 }
-#card {
+#card-signup {
   justify-content: center;
-  width: 30%;
+  width: 40%;
+  margin-top: 60px;
 }
 
 #text-header {
-  font-size: 20px;
+  font-size: 22px;
   background-color: lightblue;
 }
 

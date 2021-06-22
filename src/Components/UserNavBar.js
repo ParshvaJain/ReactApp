@@ -12,7 +12,7 @@ class NavWithDropDownUser extends Component {
         return(
             <Container>
                 <Navbar fixed="top" id="top-navbar" bg="dark" variant="dark">
-                        <Navbar.Brand><Link to="/userHome">StockChart</Link></Navbar.Brand>
+                        <Navbar.Brand><Link to="/userHome">Chart Market</Link></Navbar.Brand>
                         <Nav className="mr-auto">
                         <Nav.Link><Link to="/upcomingIPO">Upcoming IPOs</Link></Nav.Link>
                         <Nav.Link><Link to="/compareCompany">Compare Company</Link></Nav.Link>
@@ -21,7 +21,7 @@ class NavWithDropDownUser extends Component {
 
                     
                         <DropdownButton menuAlign="right" title="User" id="dropdown-menu-align-right">
-                            <Dropdown.Item eventKey="1"><Link to="/updateProfile">Update Profile</Link></Dropdown.Item>
+                            <Dropdown.Item eventKey="1"><Link to="/updateProfile/user">Update Profile</Link></Dropdown.Item>
                             <Dropdown.Divider />
                             <Dropdown.Item eventKey="4" href="/">Logout</Dropdown.Item>
                         </DropdownButton>
