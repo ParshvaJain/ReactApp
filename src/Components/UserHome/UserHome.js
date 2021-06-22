@@ -10,6 +10,7 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import {Row,Form} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 
 class NavWithDropDownUser extends Component {
     constructor(props){
@@ -33,11 +34,11 @@ class NavWithDropDownUser extends Component {
         return(
             <Container>
                 <Navbar fixed="top" id="top-navbar" bg="dark" variant="dark">
-                        <Navbar.Brand href="/userHome">Chart Market</Navbar.Brand>
+                        <Navbar.Brand><Link to="/userHome">Chart Mark</Link></Navbar.Brand>
                         <Nav className="mr-auto">
-                        <Nav.Link href="/upcomingIPO">Upcoming IPOs</Nav.Link>
-                        <Nav.Link href="/compareCompany">Compare Company</Nav.Link>
-                        <Nav.Link href="/compareSectors">Compare Sectors</Nav.Link>
+                        <Nav.Link><Link to="/upcomingIPO">Upcoming IPOs</Link></Nav.Link>
+                        <Nav.Link><Link to="/compareCompany">Compare Company</Link></Nav.Link>
+                        <Nav.Link><Link to="/compareSectors">Compare Sectors</Link></Nav.Link>
                         </Nav>
 
                         <Form inline id="search-box-full">
@@ -145,4 +146,4 @@ class UserHome extends Component {
     }
 }
 
-export default UserHome;
+export default withRouter(UserHome);
