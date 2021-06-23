@@ -366,7 +366,7 @@ class CompanyCard extends Component {
                             </Row>
                         </Container>
                     </Card.Text>
-                    <Row md="2">
+                    <Row md="3">
                         <Col>
                             <Button id="edit-details-company" onClick={(event) => this.props.UpdateCompanyForm(event, this.props.companyId)} variant="primary">Edit Details</Button>
                         </Col>
