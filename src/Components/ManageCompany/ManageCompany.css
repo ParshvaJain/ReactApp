@@ -60,3 +60,7 @@
 #create-company-button {
   margin-top: -45px;
 }
+
+#delete-company-button{
+  padding-right: 5px;
+}
