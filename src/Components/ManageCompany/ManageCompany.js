@@ -315,10 +315,11 @@ class CompanyCard extends Component {
         this.deleteCompany = this.deleteCompany.bind(this);
     }
 
-    deleteCompany() {
+    deleteCompany(e) {
+        e.preventDefault();
+
         var requestOptions = {
-            method: 'GET',
-            headers: { "Authorization": "Bearer " + this.props.getAuthToken() }
+            method: 'DELETE'
         }
 
         fetch(`https://company--service.herokuapp.com/company/delete/${this.props.companyName}`, requestOptions)
@@ -329,6 +330,7 @@ class CompanyCard extends Component {
             .then(data => {
                 if (data != null) {
                     console.log("done");
+                    
                 }
             })
     }
