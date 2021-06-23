@@ -323,7 +323,7 @@ class CompanyCard extends Component {
 
         fetch(`https://company--service.herokuapp.com/company/delete/${this.props.companyName}`, requestOptions)
             .then(res => {
-                if (res.status == 200)
+                if (res.status === 200)
                     return res.json();
             })
             .then(data => {
@@ -366,8 +366,16 @@ class CompanyCard extends Component {
                             </Row>
                         </Container>
                     </Card.Text>
-                    <Button id="edit-details-company" onClick={(event) => this.props.UpdateCompanyForm(event, this.props.companyId)} variant="primary">Edit Details</Button>
-                    <Button id="delete-details-company" id="delete-company-button" onClick={this.deleteCompany} variant="primary">Delete Company</Button>
+                    <Row md="2">
+                        <Col>
+                            <Button id="edit-details-company" onClick={(event) => this.props.UpdateCompanyForm(event, this.props.companyId)} variant="primary">Edit Details</Button>
+                        </Col>
+                        <Col>
+                            <Button id="delete-details-company" onClick={this.deleteCompany} variant="primary">Delete Company</Button>
+                        </Col>
+                    </Row>
+
+
                 </Card.Body>
             </Card>
         );
