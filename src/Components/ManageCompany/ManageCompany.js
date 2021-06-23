@@ -330,7 +330,9 @@ class CompanyCard extends Component {
             .then(data => {
                 if (data != null) {
                     console.log("done");
-                    
+                    setTimeout(() => {
+                        this.props.history.push("/adminHome");
+                    }, 5000);
                 }
             })
     }
